@@ -1,0 +1,24 @@
+body {
+    background-color: hsla(285, 95%, 60%, .5);
+}
+/* comments
+on multiple
+lines
+*/
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+article img {
+    width: 100%;
+}
+
+article h1 {
+    font-size: 5vw;
+}
+article p {
+    font-size: 3vw;
+}
