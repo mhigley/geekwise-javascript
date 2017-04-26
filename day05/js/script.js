@@ -117,18 +117,54 @@
 
 
 
-console.log(x);
+// console.log(x);
+//
+// var x = 1;
+// let y = 2;
+// const z = 3;
+//
+// console.log(y);
+// console.log(z);
+//
+// console.log(myFunc);
+//
+// var myFunc = function(){
+//     //stuff and things
+//     console.log('stuff and things');
+// }
 
-var x = 1;
-let y = 2;
-const z = 3;
+// var userName = prompt('what is your first name?');
+// userName = userName[0].toUpperCase() + userName.substr(1).toLowerCase();
+var firstName, middleName, lastName;
 
-console.log(y);
-console.log(z);
+var fn = document.getElementById('first');
+var mn = document.getElementsByTagName('button')[1];
+var ln = document.querySelector('.last');
 
-console.log(myFunc);
+fn.addEventListener('click', function(){
+    firstName = getUserName('first');
+});
+mn.addEventListener('click', function(){
+    middleName = getUserName('middle');
+});
+ln.addEventListener('click', function(){
+    lastName = getUserName('last');
+    alert(firstName + ' ' + middleName + ' ' + lastName);
+});
 
-var myFunc = function(){
-    //stuff and things
-    console.log('stuff and things');
+function getUserName(name) {
+    var name = prompt('what is your '+ name +' name?');
+    name = name[0].toUpperCase() + name.substr(1).toLowerCase();
+    return name;
 }
+
+// console.log(firstName, lastName);
+/*
+var myName = getName();
+
+function getName() {
+    return 'Matthew';
+}
+
+console.log(myName);
+*/
