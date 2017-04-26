@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#temp {
+    width: 100%;
+}
+#temp > div:first-child {
+    display: flex;
+}
+#temp > div:last-child {
+    width: 50%;
+    padding-right: 1.5px;
+    display: flex;
+    justify-content: flex-end;
+}
+#temp input[type="text"] {
+    flex: 1;
+    font-size: 5em;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 8px;
+    border: none;
+    margin-top: 8px;
+}
+#temp input:disabled {
+    background-color: hsl(0, 0%, 100%);
+    cursor: not-allowed;
+}
+#temp fieldset {
+    padding: 16px 0 0 16px;
+    margin: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#temp fieldset input {
+    margin-top: 0;
+}
+#temp fieldset span {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+}
+#temp .convert {
+    flex: 1;
+    display: flex;
+    border-right: 1.5px solid hsl(0, 0%, 47%);
+    background-color: hsl(100, 80%, 90%);
+    padding: 16px;
+}
+#temp .converted {
+    flex: 1;
+    border-left: 1.5px solid hsl(0, 0%, 47%);
+    background-color: hsl(0, 80%, 90%);
+    padding: 16px;
+}
+#temp input[type="submit"]{
+    background-color: hsl(200, 60%, 80%);
+    border: none;
+    border-radius: 2px;
+    padding: 8px 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
