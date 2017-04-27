@@ -2,7 +2,20 @@ var key = document.querySelector('.key'),
     h1 = document.querySelector('h1'),
     keyed = document.querySelector('.keyed');
 
-window.addEventListener('keypress', function(e){
+window.addEventListener('keydown', function(e){
+    e.preventDefault();
+
+    key.classList.add('hidden');
+    keyed.parentElement.classList.remove('hidden');
+
+    h1.textContent = e.keyCode;
+    keyed.textContent = e.key;
+
+    if(e.keyCode === 32){
+        keyed.textContent = 'Spacebar';
+    }
+
+    /*
     key.classList.add('hidden');
     keyed.parentElement.classList.remove('hidden');
 
@@ -30,4 +43,5 @@ window.addEventListener('keypress', function(e){
         default:
             h1.textContent = e.charCode;
     }
+    */
 });

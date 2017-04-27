@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: hsl(0, 0%, 29%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    display: none;
+}
+button {
+    background-color: hsl(0, 0%, 90%);
+    padding: 16px 32px;
+    font: inherit;
+    color: inherit;
+    border-width: 1px 1px 3px;
+    border-color: hsl(0, 0%, 79%) hsl(0, 0%, 69%) hsl(0, 0%, 59%);
+    border-style: solid solid double;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px hsla(0, 0%, 19%, .15);
+    transform: scale(1);
+    transition: all 100ms ease-out;
+}
+button:active {
+    background-color: hsl(0, 0%, 88%);
+    border-color: hsl(0, 0%, 77%) hsl(0, 0%, 67%) hsl(0, 0%, 57%);
+    box-shadow: 0 0px 0px hsla(0, 0%, 19%, 0);
+    transform: scale(.995);
+}
+main {
+    text-align: center;
+}
+h1 {
+    font-size: 18vw;
+    margin: 0 0 5vw;
+}
